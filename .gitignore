@@ -1,0 +1,93 @@
+# Archivos compilados / bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+.env/
+
+# Dependencias descargadas (pip)
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+dist/
+build/
+wheels/
+
+# Archivos temporales y de caché
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Configuración de IDEs y editores
+.vscode/
+.idea/
+.spyproject/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de testing y cobertura
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+coverage/
+.cache/
+.pytest_cache/
+nosetests.xml
+*.cover
+*.py,cover
+
+# Archivos de Jupyter
+.ipynb_checkpoints
+*.ipynb_convert
+
+# Archivos generados por herramientas
+docs/_build/
+*.mo
+*.pot
+
+# Configuración y llaves locales
+.env.local
+.env.*.local
+.envrc
+*.pem
+*.key
+*.crt
+
+# Bases de datos o datos locales
+*.db
+*.sqlite3
+data/
+datasets/
+tmp/
+uploads/
+
+# Archivos de Docker
+*.pid
+*.seed
+docker-compose.override.yml
+
+# Archivos de herramientas de CI/CD locales
+/.coverage
+/.mypy_cache/
+/.pyre/
+/.pytype/
+/ruff_cache/
+
+# Configuración de PyInstaller
+*.manifest
+*.spec
+
+# ======================================
+# Puedes agregar aquí excepciones:
+# !src/
+# !requirements.txt
+# ======================================
