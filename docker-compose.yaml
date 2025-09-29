@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app             # hot reload del código
+      - sqlite_data:/data      # persistir la base de datos
+    environment:
+      - DATABASE_URL=sqlite:///./data/bookinventory.db
+
+volumes:
+  sqlite_data:
