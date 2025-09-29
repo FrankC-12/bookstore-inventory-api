@@ -16,7 +16,7 @@ Antes de ejecutar el proyecto, asegúrate de tener:
 
 ## Instalación y ejecución
 
-# Clono el repositorio
+## Clono el repositorio
 
 ```bash
 git clone https://github.com/tu-usuario/bookstore-inventory-api.git
@@ -24,26 +24,26 @@ cd bookstore-inventory-api
 
 ---
 
-# Instalación y ejecución
+## Instalación y ejecución
 
 - docker-compose up --build
 
 
-# Acceder a la API
+## Acceder a la API
 http://localhost:8000
 
-# Si lo ejecutas sin docker
+## Si lo ejecutas sin docker
 python -m venv env
 source env/bin/activate  # Linux/macOS
 env\Scripts\activate     # Windows
 
-# Instalar las dependencias
+## Instalar las dependencias
 pip install -r requirements.txt
 
-#Ejecutar
+## Ejecutar
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
-# Ejemplo de endpoints
+## Ejemplo de endpoints
 GET /books/
 
 [
@@ -62,7 +62,7 @@ GET /books/
   }
 ]
 
-#Crar un libro nuevo
+## Crear un libro nuevo
 POST /books/
 Content-Type: application/json
 
