@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from routes import book_routes
+from config.database import engine, Base
 
 
 app = FastAPI(
@@ -7,6 +9,6 @@ app = FastAPI(
     version="1.0.0"
 )
 
-@app.get("/")
-async def read_root():
-    return {"message": "Welcome to the Book Inventory API!"}
+Base.metadata.create_all(bind=engine)
+
+app.include_router(book_routes.router)
