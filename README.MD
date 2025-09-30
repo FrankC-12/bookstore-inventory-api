@@ -6,6 +6,7 @@ API para la gestión de inventario de libros, construida con **FastAPI** y **SQL
 
 ## Requisitos previos
 
+
 Antes de ejecutar el proyecto, asegúrate de tener:
 
 - **Python 3.12** (solo si deseas ejecutar sin Docker)
@@ -16,7 +17,7 @@ Antes de ejecutar el proyecto, asegúrate de tener:
 
 ## Instalación y ejecución
 
-## Clono el repositorio
+### Clono el repositorio
 
 ```bash
 git clone https://github.com/tu-usuario/bookstore-inventory-api.git
@@ -24,13 +25,14 @@ cd bookstore-inventory-api
 
 ---
 
-## Instalación y ejecución
+### Instalación y ejecución
 
 - docker-compose up --build
 
 
-## Acceder a la API
-http://localhost:8000
+### Acceder a la API
+
+http://localhost:8000/docs
 
 ## Si lo ejecutas sin docker
 python -m venv env
@@ -43,7 +45,14 @@ pip install -r requirements.txt
 ## Ejecutar
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
+##Observacion
+Para vistas de este desarrollo se utilizo Swagger para la visualizacion y prueba de los endpoints
+
+## Navegador
+En el navegador colocar al final /docs para poder visualizar el Swagger
+
 ## Ejemplo de endpoints
+
 GET /books/
 
 [
